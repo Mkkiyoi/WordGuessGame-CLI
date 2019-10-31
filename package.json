@@ -1,0 +1,30 @@
+{
+  "name": "wordguessgame-cli",
+  "version": "1.0.0",
+  "description": "A Node based CLI (Command Line Interface) word guessing game.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mkkiyoi/WordGuessGame-CLI.git"
+  },
+  "keywords": [
+    "node",
+    "CLI",
+    "Word",
+    "Guess",
+    "Game",
+    "inquirer"
+  ],
+  "author": "Matthew Kiyoi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mkkiyoi/WordGuessGame-CLI/issues"
+  },
+  "homepage": "https://github.com/Mkkiyoi/WordGuessGame-CLI#readme",
+  "dependencies": {
+    "inquirer": "^7.0.0"
+  }
+}
