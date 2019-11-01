@@ -17,9 +17,11 @@
 
 
 ## __Examples Using WordGuessGame-CLI__
+Example of guessing the word correctly.
+![WordGuessGame-CLI-Example-Correct.gif](assets/images/WordGuessGame-CLI-Example-Correct.gif)
 
-<!-- `node liri concert-this taylor swift`
-![concert-this-with-input.png](assets/images/concert-this-with-input.png) -->
+Example of guessing the word incorrectly.
+![WordGuessGame-CLI-Example-Incorrect.gif](assets/images/WordGuessGame-CLI-Example-Incorrect.gif)
 
 ## __Node Modules used in WordGuessGame-CLI__
 * [fs](https://nodejs.org/api/fs.html)

@@ -60,7 +60,7 @@ let playGame = () => {
     console.log(wordChosen.displayWord());
     console.log('Letters guessed: ' + lettersGuessed);
     if (!isGameOver && guesses > 0) {
-        console.log(guesses);
+        console.log('Guesses Left: ' + guesses);
         guesses--;
         makeGuess();
     } else {
