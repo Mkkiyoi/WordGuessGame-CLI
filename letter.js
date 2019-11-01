@@ -1,4 +1,4 @@
-let Letter = (letter) => {
+function Letter(letter) {
     this.letter = letter;
     this.guessed = false;
     this.toString = () => {
