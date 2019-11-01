@@ -1,6 +1,15 @@
+/**
+ * Creates a new Letter object representing a given letter.
+ * @param {char} letter 
+ */
 function Letter(letter) {
     this.letter = letter;
     this.guessed = false;
+
+    /**
+     * Returns a string representation of the letter or 
+     * "_" if not already guessed.
+     */
     this.toString = () => {
         if (this.guessed) {
             return this.letter;
@@ -8,6 +17,11 @@ function Letter(letter) {
             return '_';
         }
     }
+
+    /**
+     * returns true if the letter passed in is the same as the letter stored, 
+     * otherwise returns false.
+     */
     this.checkGuess = (letter) => {
         if (this.letter === letter) {
             this.guessed = true;
@@ -16,5 +30,6 @@ function Letter(letter) {
     }
 }
 
+// Export the Letter constructor as a node module.
 module.exports = Letter;
 

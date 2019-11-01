@@ -1,13 +1,19 @@
+// Node module imports
 let Word = require('./word.js');
 let inquirer = require('inquirer');
 let fs = require('fs');
 
+// Global variable definitions.
 let isGameOver = false;
 let guesses = 10;
 let wordChosen = '';
 let lettersGuessed = [];
 let correctWord = '';
 
+/**
+ * getWord reads the words_alpha.txt file and chooses a random word to use for the game.
+ * After a word is chosen, it calls playGame to initiate game functionality.
+ */
 let getWord = () => {
     isGameOver = false;
     fs.readFile('words_alpha.txt', 'utf8', (err, data) => {
@@ -23,6 +29,10 @@ let getWord = () => {
     });
 }
 
+/**
+ * makeGuess prompts the player to make a guess.
+ * If the letter chosen has already been guessed, prompt the player to guess a different letter. 
+ */
 let makeGuess = () => {
     inquirer.prompt([
         {
@@ -41,7 +51,11 @@ let makeGuess = () => {
     });
 }
 
-
+/**
+ * playGame contains the basic game loop.
+ * Checks if the game is over. If not, calls makeGuess. 
+ * If the game is over, prints an endgame message and calls playAgain.
+ */
 let playGame = () => {
     console.log(wordChosen.displayWord());
     console.log('Letters guessed: ' + lettersGuessed);
@@ -60,6 +74,11 @@ let playGame = () => {
     }
 }
 
+/**
+ * playAgain asks the player if they want to play again.
+ * If they do, call getWord to reinitiate the game. 
+ * If not the game terminates.
+ */
 let playAgain = () => {
     inquirer.prompt([
         {
