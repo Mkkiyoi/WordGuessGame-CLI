@@ -25,7 +25,7 @@ Example of guessing the word incorrectly.
 
 ## __Node Modules used in WordGuessGame-CLI__
 * [fs](https://nodejs.org/api/fs.html)
-* [inquirer]((https://www.npmjs.com/package/inquirer))
+* [inquirer](https://www.npmjs.com/package/inquirer)
 
 ## __Assets__
 * Javascript for the main node application can be found [here](index.js).
